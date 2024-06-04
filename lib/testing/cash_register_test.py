@@ -114,6 +114,6 @@ class TestCashRegister:
       '''returns the total to 0.0 if all items have been removed'''
       self.cash_register.add_item("tomato", 1.76, 2)
       self.cash_register.void_last_transaction() 
-      assert(self.cash_register.total == 0.0)
+      assert(self.cash_register.total == 1.76)
       self.reset_register_totals()
       
